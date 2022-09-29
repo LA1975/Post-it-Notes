@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/notes.png" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter">
+
+    
+    <title>Document</title>
+</head>
+
+<body>
+
+  <div id="modal">
+    <div id="inner_modal">
+      <textarea placeholder="Note..." id="user_input" maxlength="160"></textarea>
+      <i class="las la-times-circle"id="hide"></i>
+    </div>
+  </div>
+  
+  <main>
+
+    <header>
+      <div class="container">
+        <div id="header">
+          <h1><i class="las la-sticky-note"></i></i> Sticky Notes</h1>
+          <p id="add_note"> <i class="las la-plus-square"></i>New Note</p>
+          
+        </div>
+      </div>
+    </header>
+    
+    <section>
+      <div class="container">
+        <div id="all_notes"></div>
+      </div>
+    </section>
+
+  </main>
+  
+  <script src="script.js"></script>
+</body>
+</html>
