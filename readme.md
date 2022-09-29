@@ -1,6 +1,6 @@
 # Post It Notes style todo app
 
-## Introduction - why this
+## Introduction - why this project
 I am wanting to transition from teaching to software development.  Upon completion of PGCert (Information Technology), I was offered a job at a startup that was exciting and seemed such a wonderful supportive team to launch my new career, it ticked all the boxes for me including being fully remote.
 
 I turned it down.  Why? 
