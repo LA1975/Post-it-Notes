@@ -7,7 +7,18 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter">
-
+    
+    <script src="https://cdn.tiny.cloud/1/2duvd1mssrk5mmedk8zrcjkjsl144jskh7lcggqtfvr41evs/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    
+      <script>
+        tinymce.init({
+          selector: 'textarea',
+          plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+          toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+        });
+      </script>
+    </body>
+    </html>
     
     <title>Document</title>
 </head>
@@ -16,8 +27,12 @@
 
   <div id="modal">
     <div id="inner_modal">
-      <textarea placeholder="Note..." id="user_input" maxlength="160"></textarea>
-      <i class="las la-times-circle"id="hide"></i>
+      <textarea placeholder="Note..." id="user_input" maxlength="160" maxwidth ="160"></textarea>
+      
+    </div>
+    <div id="modal_icons">
+      <i  class="las la-times-circle"id="hide"></i>
+      <i  class="las la-check-circle"id="tick"></i>
     </div>
   </div>
   
