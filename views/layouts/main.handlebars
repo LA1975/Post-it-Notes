@@ -26,10 +26,7 @@
              
         <ul id="navList">
          <li><a class="navLink "  href="#header">Home</a></li>
-         <li><a class="navLink" href="#login">Login</a></li>
-         <li> <a class="navLink" href="#about">About</a></li>
-         
-        
+         <li> <a class="navLink" href="#about">About</a></li>       
         </ul>  
         <div class="hamburger" id="hamburger">
             <div id="hamburger-container">
@@ -40,15 +37,24 @@
         </div>   
     </nav>
      
-      <div class="container">
+  <div class="container">
         <div id="header">
           <img src="/images/notes.png" alt="image of stick note">
           <h1> Sticky Notes</h1>
-          <p id="add_note"> <i class="las la-plus-square"></i></p>
-          
+         
+          {{#if @root.user}}
+          <p id="add_note"> <i class="las la-plus-square"></i>New Note</p>
+          {{else}}
+          <p id="loginButton"><i class="las la-sign-in-alt"></i>Login</p>
+          {{/if}}
+
         </div>
-      </div>
-    </header>
+  </div>
+ 
+</header>
+
+    
+
 {{{body}}}  
 </body>
 <script src="script.js"></script>

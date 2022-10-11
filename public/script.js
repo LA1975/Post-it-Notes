@@ -4,14 +4,14 @@ var random_colors = ["#c2ff3d","#ff3de8","#3dc2ff","#04e022","#bc83e6","#ebb328"
 var random_degree = ["rotate(3deg)", "rotate(1deg)", "rotate(-1deg)", "rotate(-3deg)", "rotate(-5deg)", "rotate(-8deg)"];
 var index = 0;
 
-
-// document.querySelector("#modal").style.display = "none";
-
-document.querySelector(".la-plus-square").addEventListener("click", () => {
-  document.querySelector("#modal").style.display = "block";
-  document.querySelector("#user_input").select();
   
-});
+  document.querySelector("#modalLogin").style.display = "none";
+
+//   document.querySelector(".la-plus-square").addEventListener("click", () => {
+//   document.querySelector("#modal").style.display = "block";
+//   document.querySelector("#user_input").select();
+  
+// });
 
 document.querySelector("#hide").addEventListener("click", () => {
   document.querySelector("#modal").style.display = "none";
@@ -106,3 +106,51 @@ function toggleButton(){
  }
 
 hamburgerBtn.addEventListener('click', toggleButton);
+
+// login and signup forms
+const forms = document.querySelector(".forms");
+const showHidePassword = document.querySelectorAll(".la-eye-slash");
+const links = document.querySelectorAll(".link");
+
+// for testing
+// console.log(forms,showHidePassword,links);  
+showHidePassword.forEach(eyeIcon =>{
+  eyeIcon.addEventListener("click", ()=>{
+    let passwordFields = eyeIcon.parentElement.parentElement.querySelectorAll(".password");
+    // for testing
+    // console.log(passwordFields);
+
+    passwordFields.forEach(password =>{
+      if (password.type === "password"){
+        password.type ="text";
+        eyeIcon.classList.replace("la-eye-slash" , "la-eye");
+        return;
+      }
+      password.type ="password";
+      eyeIcon.classList.replace("la-eye", "la-eye-slash" );
+    })
+  });
+});
+
+links.forEach(link =>{
+  link.addEventListener("click", e=>{
+    e.preventDefault(); //prevents the formsubmit
+    forms.classList.toggle("show-signup");
+  })
+})
+//Login modal
+document.querySelector(".la-sign-in-alt").addEventListener("click", () => {
+  let modalLogin = document.querySelector("#modalLogin");
+  let modalDisplay = modalLogin.style.display;
+ 
+    if (modalDisplay === "block"){
+      document.querySelector("#modalLogin").style.display = "none";
+    }
+    if (modalDisplay === "none"){
+      document.querySelector("#modalLogin").style.display = "block";
+    }
+   
+  });
+
+
+ 

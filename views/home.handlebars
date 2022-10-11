@@ -1,4 +1,7 @@
-<div id="modal">
+
+  
+  <main>
+  <div id="modal">
     <div id="inner_modal">
       <textarea placeholder="Note..." id="user_input" maxlength="160" maxwidth ="160"></textarea>
       
@@ -8,10 +11,96 @@
       <i  class="las la-check-circle"id="tick"></i>
     </div>
   </div>
-  
-  <main>
 
-   
+
+  <div id="modalLogin" class="modal">
+  <section class="pop-container forms">
+      <div class = "form login">
+        <div class="form-content">
+          <h2>Login</h2> 
+          <form action="./" method="POST">
+            <div class="field textInput">
+                  <input type="email" placeholder ="Email" name="eamil" class="input" required>
+            </div>
+
+            <div class="field textInput">
+              
+              <input type="password" placeholder="Password" name="password" class="password" required>
+              <i class="las la-eye-slash"></i>
+            </div>
+            <div class="form-link">
+              <a href="#" class="forgot-password">Forgot Password</a>
+            </div>
+
+            <div class=" field textInput button">
+              <button>Login</button>
+            </div>
+            </form>
+
+            <div class="form-link">
+              <span>Don't have an account? <a href="#" class="link signup-link">Create one here.</a></span>
+            </div>
+      </div>
+      <div class="line"></div>
+      <div class="media-options">
+        <a href="#" class="field facebook">
+          <i class="lab la-facebook-f facebook-icon"></i>
+          <span>Login with Facebook</span>
+        </a>
+      </div>
+       <div class="media-options">
+        <a href="#" class="field google">
+          <img src="/images/google-logo-9824.png" alt="Google Sign In" class="google-img">
+          <span>Login with Google</span>
+        </a>
+      </div>
+     </div>
+
+{{!-- Signup form --}}
+         <div class = "form signup">
+        <div class="form-content">
+          <h2>Signup</h2> 
+          <form action="./" method="POST">
+            <div class="field textInput">
+                  <input type="email" placeholder ="Email" name="eamil" class="input" required>
+            </div>
+
+            <div class="field textInput">
+                 <input type="password" placeholder="Password" name="password" class="password" required>
+            </div>
+            <div class="field textInput">
+              
+              <input type="password" placeholder="Password" name="password" class="password" required>
+              <i class="las la-eye-slash"></i>
+            </div>
+           
+            <div class="field textInput button">
+              <button>Signup</button>
+            </div>
+            
+
+          </form>
+           <div class="form-link">
+              <span>Already have an account? <a href="#" class="link login-link">Login here.</a></span>
+            </div>
+      </div>
+      <div class="line"></div>
+      <div class="media-options">
+        <a href="#" class="field facebook">
+          <i class="lab la-facebook-f facebook-icon"></i>
+          <span>Login with Facebook</span>
+        </a>
+      </div>
+       <div class="media-options">
+        <a href="#" class="field google">
+          <img src="/images/google-logo-9824.png" alt="Google Sign In" class="google-img">
+          <span>Login with Google</span>
+        </a>
+      </div>
+     </div>
+  
+  </section>
+    
     
     <section>
       <div class="container">
